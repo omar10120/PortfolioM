@@ -47,9 +47,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="sticky bottom-0 z-20 w-full backdrop-blur-xl md:hidden">
-            <Navbar />
-          </div>
+          <div className="sticky bottom-0 z-20 w-full backdrop-blur-xl md:hidden"><Navbar /></div>
 
   
         

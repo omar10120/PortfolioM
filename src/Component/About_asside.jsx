@@ -61,7 +61,7 @@ function About_asside() {
                     {/* <div className='absolute z-20  w-full   backdrop-blur-xl  '>    <NavbarBottom/></div>  */}
 
                     
-                      <div className='md:hidden '>
+                      <div className='hidden max-md:block '>
                           <Routes>
                             <Route path="/" element={[ <About/>  ]} /> 
                             <Route path="/About" element={[ <About/>]} /> 
