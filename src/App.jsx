@@ -86,7 +86,7 @@ function App() {
                             <Route path="Blog" element={[<Blog/>]} /> 
                             <Route path="Contact" element={[<Contact />]} /> 
                         </Routes>
-      
+                        <div className="sticky bottom-0 z-20 w-full backdrop-blur-xl md:hidden"><Navbar /></div>
                         </div>
                </BrowserRouter>
 
@@ -97,7 +97,6 @@ function App() {
             </div>
           </div>
      
-            <div className="fixed bottom-0 z-20 w-full backdrop-blur-xl md:hidden"><Navbar /></div>
 
 
       </>
