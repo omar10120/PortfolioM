@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Messageform from './Messageform'
+import { Outlet, Link ,} from "react-router-dom";
 
 function Contact() {
 
@@ -11,6 +12,7 @@ function Contact() {
   return (
     <>
     <div className=' w-full relative justify-start flex flex-col '>
+    
          <div className='flex flex-col   space-y-6 '>
             <h1 className='text-3xl font-bold'>Contact</h1>
             <div className='w-full'><div className='h-[5px] rounded  w-10 bg-gradient-to-r from-[#474bff] to-[#bc48ff] '></div></div>

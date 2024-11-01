@@ -41,7 +41,7 @@ function Portfolio() {
   }
 
   return (
-    <div className="w-full relative flex flex-col h-full  max-md:px-0">
+    <div className="w-full relative flex flex-col h-full ">
       <div className="flex flex-col space-y-6">
         <h1 className="text-3xl font-bold">Portfolio</h1>
         <div className="h-[5px] w-10 bg-gradient-to-r from-[#474bff] to-[#bc48ff] rounded"></div>
