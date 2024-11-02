@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route , useNavigate } from "react-router-dom";
 
 // Import components
 import ContactNav from './Component/ContactNav'
@@ -59,7 +59,10 @@ function App() {
               if (aboutRef.current) observer.unobserve(aboutRef.current);
           };
       }, []);
+      
 
+
+      
   return (
       <>
         <BrowserRouter>
@@ -77,6 +80,8 @@ function App() {
                                 <Route path="Resume" element={[<Resume />]} /> 
                                 <Route path="Blog" element={[<Blog/>]} /> 
                                 <Route path="Contact" element={[<Contact />]} /> 
+                                <Route path="*" element={<About />} />
+
                             </Routes>
                     </div>
                     </div>
