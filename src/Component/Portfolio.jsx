@@ -11,9 +11,9 @@ function Portfolio() {
   ]);
 
   const cardPortfolio = [
-    { src: '/src/images/image.png', title: 'CryptoByte', tech: 'web-design' },
-    { src: '/src/images/image.png', title: 'CryptoByte', tech: 'webdesign' },
-    { src: '/src/images/image.png', title: 'CryptoByte', tech: 'WebDevelopment' },
+    { src: 'https://i.ibb.co/6ZT4sDS/image.png', href:'https://design-web-template.vercel.app/',title: 'Bird View', tech: 'web-design' },
+    { src: 'https://i.ibb.co/Lxrpmst/image.png', href:'https://mountains-view.vercel.app/', title: 'Mountains View', tech: 'webdesign' },
+    { src: 'https://i.ibb.co/p36bLFg/image.png', href:'https://graphic-and-web-design.vercel.app/',title: 'Graphic Desgin Template', tech: 'WebDevelopment' },
   ];
 
   // Set default navigation name if empty
@@ -91,18 +91,22 @@ function Portfolio() {
                       navname === 'All' || item.tech.toLowerCase() === navname.toLowerCase()
                   )
                   .map((item, index) => (
+                      
                     <div
                       key={index}
                       className="flex flex-col space-y-3 items-start animate-fadeIn transition-all duration-500"
                     >
-                      <div className="w-48 h-50 overflow-hidden rounded-xl flex items-center justify-center group relative ">
+                      <a href={item.href} target='_blank'>
+
+                      
+                      <div className="w-48 h-50 overflow-hidden rounded-xl  group relative flex items-center justify-center">
                         <img
 
                           src={item.src}
                           className="w-full h-full  object-cover rounded-xl transition-transform duration-300 ease-in-out W-full  group-hover:scale-110"
                           alt={item.title}
                         />
-                        <div className="absolute inset-0 bg-gray-800 opacity-0 transition-opacity duration-300 group-hover:opacity-60 flex items-center justify-center text-blue-500">
+                        <div className="absolute   inset-0 bg-gray-800 opacity-0   transition-opacity duration-300 group-hover:opacity-75 flex items-center justify-center text-blue-500 ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -124,6 +128,7 @@ function Portfolio() {
                           </svg>
                         </div>
                       </div>
+                      </a>
                       <div className="text-start">
                         <div>{item.title}</div>
                         <div className="opacity-60">{item.tech}</div>

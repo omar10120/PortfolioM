@@ -31,6 +31,11 @@ export default {
       gridAutoColumns: {
         '2fr': 'minmax(0, 2fr)',
       },
+      boxShadow: {
+        'custom-4': '0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22)',
+        'custom-3': '0px 14px 28px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.22)',
+      },
+
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0', transform: 'translateY(10px)' },

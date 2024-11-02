@@ -80,7 +80,7 @@ function Resume() {
                             <div className='flex flex-col space-y-1 '>
                                   <h3>{item.center}</h3>
                                   <h2 className='text-[#8D9BCF]'>{item.year}</h2>
-                                  <p className='pb-5'>{item.title}</p>
+                                  <p className='pb-5 opacity-60'>{item.title}</p>
                             </div>  
                           </div>
                         ))}   
@@ -116,7 +116,7 @@ function Resume() {
                       <div className='flex flex-col space-y-1 pb-5 ' >
                             <h3>{item.title}</h3>
                             <h2 className='text-[#8D9BCF]'>{item.year}</h2>
-                            <p className=''>{item.text}</p>
+                            <p className=' opacity-60'>{item.text}</p>
                       </div>  
                     </div>
                   ))}        
@@ -154,11 +154,11 @@ function Resume() {
                        
 
                                         {/* start tech */}
-                                        <div className={`grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2 max-sm:w-4/5 mx-3    `}> 
+                                        <div className={`grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2 max-sm:w-4/5    `}> 
                                             {Frontend.map((item)=>(
-                                                    <div className=' flex py-1 px-1  space-x-2 flex justify-center items-center  rounded-2xl border-2 border-grey-700  '>
+                                                    <div className=' flex py-1 px-1  space-x-2 flex justify-center items-center  rounded-2xl  border-grey-700  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]   '>
                                                         <div className=' w-5 rounded '><img src={item.src}  className='h-6 w-6  rounded-2xl' /></div>
-                                                        <div className='text-xs'>{item.tech}</div>
+                                                        <div className='text-xs '>{item.tech}</div>
                                                         
                                                     </div> 
                                                   ))}
@@ -174,7 +174,7 @@ function Resume() {
                       <div className={`flex flex-col items-center justify-start  w-[1px] bg-line    `}>
                       <div className={`flex justify-center items-center my-3 `}>
                         <div className='absolute flex justify-center items-center'>
-                            <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838] '></div>
+                            <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838]  '></div>
                             <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
                         </div>
                       </div>
@@ -184,9 +184,9 @@ function Resume() {
                             <h2 className='text-[#8D9BCF]'>2029 - 2020</h2>
                                   
                                         {/* start tech */}
-                                        <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2  max-sm:w-4/5 mx-3'> 
+                                        <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2  max-sm:w-4/5'> 
                                             {Backend.map((item)=>(
-                                                    <div className=' flex py-2 px-1 space-x-2 flex justify-center items-center  rounded-2xl border-2 border-grey-700  '>                                                    
+                                                    <div className=' flex py-2 px-1 space-x-2 flex justify-center items-center  rounded-2xl  border-grey-700 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] '>                                                    
                                                         <div className=' w-5 rounded '><img src={item.src} className='h-6 w-6' /></div>
                                                         <div className='text-xs'>{item.tech}</div>
                                                     </div> 
@@ -212,9 +212,9 @@ function Resume() {
                             <h2 className='text-[#8D9BCF]'>2029 - 2020</h2>
                                   
                                         {/* start tech */}
-                                        <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2  max-sm:w-4/5 mx-3'> 
+                                        <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2  max-sm:w-4/5'> 
                                             {Database.map((item)=>(
-                                                    <div className=' flex py-2  px-1 space-x-2 flex justify-center items-center  rounded-2xl border-2 border-grey-700  '>
+                                                    <div className=' flex py-2  px-1 space-x-2 flex justify-center items-center  rounded-2xl order-grey-700  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  '>
                                                         <div className=' w-5 rounded '><img src={item.src} className='h-6 w-6' /></div>
                                                         <div className='text-xs '>{item.tech}</div>
                                                     </div> 
@@ -235,14 +235,14 @@ function Resume() {
                         </div>
                       </div>
                       </div>                    
-                      <div className='flex flex-col space-y-2   max-md:w-full  ' >
+                      <div className='flex flex-col space-y-2   max-md:w-full   ' >
                             <h3>Tools & Version Control</h3>
                             <h2 className='text-[#8D9BCF]'>2029 - 2020</h2>
                                   
                                         {/* start tech */}
-                                        <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2  py-2  max-sm:w-5/5   mx-5'> 
+                                        <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2  py-2  max-sm:w-4/5   '> 
                                             {Tools.map((item)=>(
-                                                    <div className=' flex py-2  px-2  space-x-2 flex justify-center items-center  rounded-2xl border-2 border-grey-700   '>
+                                                    <div className=' flex py-2  px-2  space-x-2 flex justify-center items-center  rounded-2xl border-grey-700   shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]   '>
                                                                 <div className=' w-5 rounded '><img src={item.src} className={`h-6 w-6 ${item.style}`} /></div>
                                                                 <div className='text-xs '>{item.tech}</div>
                                                         

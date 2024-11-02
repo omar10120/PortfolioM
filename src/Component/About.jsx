@@ -8,15 +8,13 @@ import './About.module.css'
 function About() {
 
   const card = [
-    {title : 'FrontEnd', text : 'Crafting responsive and user-friendly interfaces with the latest technologies to deliver seamless, engaging web experiences.', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg'},
-    {title : 'Datebase', text : 'Designing and managing efficient databases to store, organize, and retrieve data, providing seamless data flow and integration.', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg'},
-    {title : 'Backend', text : 'Building robust and scalable server-side solutions, ensuring secure, fast, and efficient functionality for your web applications.', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg'},
-  
+    {title : 'FrontEnd', text : 'Crafting responsive and user-friendly interfaces with the latest technologies to deliver seamless, engaging web experiences.', src:'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/50/external-front-end-ux-and-ui-icons-flaticons-lineal-color-flat-icons.png'},
+    {title : 'Datebase', text : 'Designing and managing efficient databases to store, organize, and retrieve data, providing seamless data flow and integration.', src:'https://img.icons8.com/3d-fluency/94/database.png'},
+    {title : 'Backend', text : 'Building robust and scalable server-side solutions, ensuring secure, fast, and efficient functionality for your web applications.', src:'https://img.icons8.com/color/48/programming--v1.png'},    
   ]
   const cardBottom = [
-    {title : 'Fiverr',a:'', text : 'Explore my services on Fiverr, Where I deliver professional web development solutions tailored to your project needs. ', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg'},
-    {title : 'LinkedIn',a:'', text : 'Connect with me on LinkedIn to view my professional journey, network, and explore opportunities for collaboration. ', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg'},
-  
+    {title : 'Fiverr',a:'', text : 'Coming Soon... ', src:'https://img.icons8.com/color/48/fiverr.png'},
+    {title : 'LinkedIn',a:'', text : 'Connect with me on LinkedIn to view my professional journey, network, and explore opportunities for collaboration. ', src:'https://img.icons8.com/3d-fluency/94/linkedin.png'},
   ]
   return (
     <div className=' w-full relative justify-center flex flex-col  '>
@@ -43,12 +41,12 @@ function About() {
                 //end card what am doing
               ))}
 
-              
+    
             </div>
 
         </div>
         <div className='flex justify-center py-6'>
-          <button className=" appearance-none block  bg-component  text-white rounded-2xl border-2 border-grey-700 rounded py-3 px-7 leading-tight focus:outline-none focus:border-gray-500 flex space-x-3 items-center justify-center hover:bg-gradient-to-r hover:from-indigo-500 max-md:w-full ">
+          <button className=" appearance-none block  bg-component  text-white rounded-2xl  border-grey-700 rounded py-3 px-7 leading-tight focus:outline-none focus:border-gray-500 flex space-x-3 items-center justify-center hover:bg-gradient-to-r hover:from-indigo-500 max-md:w-full shadow-custom-4 ">
             <div className='text-blue-400'>
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5 7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"></path></svg>
             </div>
