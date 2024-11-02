@@ -89,7 +89,7 @@ function App() {
                         {/* <About_asside  /> */}
                     </div>
                 </div>
-                    <div className="fixed bottom-0 z-20 w-full backdrop-blur-xl md:hidden w-2/3"><Navbar /></div>
+                    <div className="fixed bottom-0 z-20 w-full backdrop-blur-2xl md:hidden w-2/3 backdrop-brightness-50"><Navbar /></div>
                </BrowserRouter>
      
 

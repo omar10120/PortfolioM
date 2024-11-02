@@ -3,14 +3,14 @@ import React from 'react'
 function Resume() {
   const points=[
    {title:'Damascus • School',year:'JUN 2018', text:'' ,center : 'Professional Baccalaureate Degree (information technology)'},
-   {title:'Syrian Virtual University',year:'MAR 2024', text:'Syrian Virtual University' ,center : 'Branch Bachelor in Information Technology (BAIT) Specialization Information Systems and Data networks (ISDN)', style:'max-md:h-32'},
-   {title:'Syrian Virtual University',year:'AUG 2024', text:'' ,center : 'Master of Web Science (M.Sc. in Web Science).' , style:'h-3 ', },
-  //  {title:'Gained experience in Firebase and MongoDB, focusing on backend integration, data storage and user authentication for full-stack development.',year:'2029 - 2020', text:'',style:'h-3',center : ''},
+   {title:'Syrian Virtual University',year:'MAR 2024', text:'Syrian Virtual University' ,center : 'Branch Bachelor in Information Technology (BAIT) Specialization Information Systems and Data networks (ISDN)', style:''},
+   {title:'Syrian Virtual University',year:'AUG 2024', text:'' ,center : 'Master of Web Science (M.Sc. in Web Science).' , style1:'h-3', },
+  
    
   ]
   const Experience=[
-   {title:'Frontend Developer',year:'Feb 2021',text: 'multiple companies , Web page development , Add unique ideas Working on improving old interfaces in a modern way '},
-   {title:'Backend Developer',year:'Nov 2022',text : 'Working on developing a pharmacy management program , Working on developing the program in a distinctive way , Correct and address errors after studying the project , developing an api and connected with mobile application',style:'h-32',  },
+   {title:'Frontend Developer',year:'Feb 2021',text: 'multiple companies , Web page development , Add unique ideas Working on improving old interfaces in a modern way ', style:'h-full'},
+   {title:'Backend Developer',year:'Nov 2022',text : 'Working on developing a pharmacy management program , Working on developing the program in a distinctive way , Correct and address errors after studying the project , developing an api and connected with mobile application',style:'h-full',  },
    {title:'Full-Stack Developer',year:'Aug 2024',text : 'create user authentication method , create crud operation , creating APIs to deal with the project , developing the interfaces for the web application',style:'h-3',  },
   ]
   const Frontend=[
@@ -41,8 +41,8 @@ function Resume() {
   const Tools =[
     {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg' , tech:'VsCode'},
     {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg' , tech:'V Studio'},
-    {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' , tech:'Git&GitHub  '},
-    {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg' , tech:'POSTMAN  ', },
+    {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' ,style:'bg-white rounded-2xl', tech:'GitHub'},
+    {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg' , tech:'POSTMAN', },
   ]
 
   /*end tech*/  
@@ -53,7 +53,7 @@ function Resume() {
               <h1 className='text-3xl font-bold'>Resume</h1>
               <div className='w-full'><div className='h-[5px] rounded  w-10 bg-gradient-to-r from-[#474bff] to-[#bc48ff] '></div>
           </div>
-              <div className='w-full flex flex-col   '>
+              <div className='w-full flex flex-col    '>
                   <div className='flex space-x-8'>
                     <div className='flex flex-col items-center justify-start w-[1px]  bg-line h-28   '>
                       <div className='p-3  bg-grey-800 rounded-xl -my-1 flex justify-center items-center'>
@@ -64,24 +64,28 @@ function Resume() {
                         <h1 className='text-2xl font-bold'>Education</h1> 
                     </div>  
                   </div>
-                  {points.map((item)=>(
-                    // <div className='flex space-x-8 bg-red-900 w-2/3 '>
-                    <div className='flex space-x-8   '>
-                      <div className={`flex flex-col items-center justify-start  w-[1px] bg-line h-28 ${item.style}    `}>
-                      <div className={`flex justify-center items-center my-3 `}>
-                        <div className='absolute flex justify-center items-center'>
-                              <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838] '></div>
-                              <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
-                        </div>
-                      </div>
-                      </div>                    
-                      <div className='flex flex-col space-y-1'>
-                            <h3>{item.center}</h3>
-                            <h2 className='text-[#8D9BCF]'>{item.year}</h2>
-                            <p>{item.title}</p>
-                      </div>  
-                    </div>
-                  ))}        
+
+                  
+                      {points.map((item)=>(
+                          // <div className='flex space-x-8 bg-red-900 w-2/3 '>
+                          <div className='flex space-x-8   '>
+                            <div className={`flex flex-col items-center justify-start  w-[1px] bg-line  ${item.style1}  `}>
+                            <div className={`flex justify-center items-center my-3 `}>
+                              <div className='absolute flex justify-center items-center  '>
+                                    <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838] '></div>
+                                    <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
+                              </div>
+                            </div>
+                            </div>                    
+                            <div className='flex flex-col space-y-1 '>
+                                  <h3>{item.center}</h3>
+                                  <h2 className='text-[#8D9BCF]'>{item.year}</h2>
+                                  <p className='pb-5'>{item.title}</p>
+                            </div>  
+                          </div>
+                        ))}   
+                        
+
                     {/* right svg */}
                   <div className='flex flex-col space-y-3'>
                 </div>
@@ -90,7 +94,7 @@ function Resume() {
               {/* start Experience  */}
               <div className='w-full flex flex-col    '>
                   <div className='flex space-x-8 '>
-                    <div className='flex flex-col items-center justify-start w-[1px]  bg-line h-28   '>
+                    <div className='flex flex-col items-center justify-start w-[1px]  bg-line h-32   '>
                       <div className='p-3  bg-grey-800 rounded-xl -my-1 flex justify-center items-center'>
                       <svg stroke="currentColor" fill="#617CDB" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0zm10 5h4v2h-4zm0 0h4v2h-4z"></path><path d="M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"></path></svg>
                       </div>
@@ -101,15 +105,15 @@ function Resume() {
                   </div>
                   {Experience.map((item)=>(
                     <div className='flex space-x-8   '>
-                      <div className={`flex flex-col items-center justify-start   w-[1px] bg-line h-28 ${item.style} max-sm:h-full `}>
+                      <div className={`flex flex-col items-center justify-start   w-[1px] bg-line  ${item.style}`}>
                       <div className={`flex justify-center items-center my-3 `}>
                           <div className='absolute flex justify-center items-center'>
-                                  <div className='w-[18px] h-[18px] 	border-[1px] rounded-full bg-component  bg-[#383838] border-[#383838] absolute opacity-70'></div>
-                                  <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
+                          <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838] '></div>
+                          <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
                             </div>
                       </div>
                       </div>                    
-                      <div className='flex flex-col space-y-1 ' >
+                      <div className='flex flex-col space-y-1 pb-5 ' >
                             <h3>{item.title}</h3>
                             <h2 className='text-[#8D9BCF]'>{item.year}</h2>
                             <p className=''>{item.text}</p>
@@ -139,8 +143,8 @@ function Resume() {
                       <div className={`flex flex-col items-center justify-start  w-[1px] bg-line    `}>
                       <div className={`flex justify-center items-center my-3 `}>
                         <div className='absolute flex justify-center items-center'>
-                                <div className='w-[18px] h-[18px] 	border-[1px] rounded-full bg-component  bg-[#383838] border-[#383838] absolute opacity-70'></div>
-                                <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
+                        <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838] '></div>
+                        <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
                         </div>
                       </div>
                       </div>                    
@@ -170,8 +174,8 @@ function Resume() {
                       <div className={`flex flex-col items-center justify-start  w-[1px] bg-line    `}>
                       <div className={`flex justify-center items-center my-3 `}>
                         <div className='absolute flex justify-center items-center'>
-                                <div className='w-[18px] h-[18px] 	border-[1px] rounded-full bg-component  bg-[#383838] border-[#383838] absolute opacity-70'></div>
-                                <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
+                            <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838] '></div>
+                            <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
                         </div>
                       </div>
                       </div>                    
@@ -198,8 +202,8 @@ function Resume() {
                       <div className={`flex flex-col items-center justify-start  w-[1px] bg-line    `}>
                       <div className={`flex justify-center items-center my-3 `}>
                         <div className='absolute flex justify-center items-center'>
-                                <div className='w-[18px] h-[18px] 	border-[1px] rounded-full bg-component  bg-[#383838] border-[#383838] absolute opacity-70'></div>
-                                <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
+                            <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838] '></div>
+                            <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
                         </div>
                       </div>
                       </div>                    
@@ -210,9 +214,9 @@ function Resume() {
                                         {/* start tech */}
                                         <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2  max-sm:w-4/5 mx-3'> 
                                             {Database.map((item)=>(
-                                                    <div className=' flex py-2 px-1 space-x-2 flex justify-center items-center  rounded-2xl border-2 border-grey-700  '>
+                                                    <div className=' flex py-2  px-1 space-x-2 flex justify-center items-center  rounded-2xl border-2 border-grey-700  '>
                                                         <div className=' w-5 rounded '><img src={item.src} className='h-6 w-6' /></div>
-                                                        <div className='text-xs'>{item.tech}</div>
+                                                        <div className='text-xs '>{item.tech}</div>
                                                     </div> 
                                                   ))}
                                          </div>
@@ -226,8 +230,8 @@ function Resume() {
                       <div className={`flex flex-col items-center justify-start  w-[1px] bg-line  h-0   `}>
                       <div className={`flex justify-center items-center my-3 `}>
                         <div className='absolute flex justify-center items-center'>
-                                <div className='w-[18px] h-[18px] 	border-[1px] rounded-full bg-component  bg-[#383838] border-[#383838] absolute opacity-70'></div>
-                                <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
+                            <div className='w-[18px] h-[18px] 	border-[1px] rounded-full  absolute opacity-70 bg-[#383838] border-[#383838] '></div>
+                            <div className='w-[5.5px] h-[5.5px]   	rounded-full bg-[#7D94E3] absolute z-10 opacity-70'></div>
                         </div>
                       </div>
                       </div>                    
@@ -238,9 +242,10 @@ function Resume() {
                                         {/* start tech */}
                                         <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2  py-2  max-sm:w-5/5   mx-5'> 
                                             {Tools.map((item)=>(
-                                                    <div className=' flex py-2 max-md:px-2 space-x-2 flex justify-center items-center  rounded-2xl border-2 border-grey-700   '>
-                                                        <div className=' w-6 rounded  '><img src={item.src} className='h-6 w-6' /></div>
-                                                        <div className='text-xs'>{item.tech}</div>
+                                                    <div className=' flex py-2  px-2  space-x-2 flex justify-center items-center  rounded-2xl border-2 border-grey-700   '>
+                                                                <div className=' w-5 rounded '><img src={item.src} className={`h-6 w-6 ${item.style}`} /></div>
+                                                                <div className='text-xs '>{item.tech}</div>
+                                                        
                                                     </div> 
                                                   ))}
                                          </div>

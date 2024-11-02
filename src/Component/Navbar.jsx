@@ -38,7 +38,7 @@ export default function Example() {
 
   return (
     
-    <Disclosure as="nav" className="  w-full  shadow-[8.0px_8.0px_8.0px_rgba(0,0,0,0.38)] md:bg-navbar border-[rgba(0,0,0,0.60)] rounded-2xl md:rounded-tl-[0] md:rounded-br-[0] md:border-t-0 md:border-r-0 md:border-t-0 border-grey-700 fixe ">
+    <Disclosure as="nav" className="  w-full  shadow-[8.0px_8.0px_8.0px_rgba(0,0,0,0.38)] md:bg-navbar  border-[rgba(0,0,0,0.60)] rounded-2xl md:rounded-tl-[0] md:rounded-br-[0] md:border-t-0 md:border-r-0 md:border-t-0 border-grey-700  ">
       <div className="w-full ">
         <div className="relative flex h-16 items-center justify-between  ">
           <div className="flex flex-1 items-center justify-center  sm:justify-center ">
