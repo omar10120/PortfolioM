@@ -66,36 +66,31 @@ function App() {
           {/* <Home /> */}
 
 
-          <div className="w-full flex justify-center items-center h-full p-16 max-sm:p-0 max-xl:py-8 max-xl:px-0 max-sm:py-8 transition-all duration-500 animate-slide-in">
-            <div className="w-9/12 h-full flex space-x-4 max-xl:space-x-0 max-xl:space-y-4 max-xl:flex-col transition-all duration-500 ease-in-out justify-center max-xl:w-10/12 max-sm:w-11/12 animate-fade-in">
-              <ContactNav />
+            <BrowserRouter>
+            <div className="w-full flex justify-center items-center h-full p-16 max-sm:p-0 max-xl:py-8 max-xl:px-0 max-sm:py-8 transition-all duration-500 animate-slide-in">
+                <div className="w-9/12 h-full flex space-x-4 max-xl:space-x-0 max-xl:space-y-4 max-xl:flex-col transition-all duration-500 ease-in-out justify-center max-xl:w-10/12 max-sm:w-11/12 animate-fade-in">
+                <ContactNav />
 
-              {/* start continer */}
-              <div className='w-4/5 rounded-2xl max-xl:w-full transition  '>
-            {/* start navbar */}
-
-                <BrowserRouter>
-                  <div className='flex justify-center flex-col p-8 h-full  bg-component rounded-2xl border-solid  border-grey-700 relative  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]     '>                  
-                      <Navbarcopy  /> 
-                      
-                        <Routes>
-                            <Route path="/" element={[ <About/>  ]} /> 
-                            {/* <Route path="About" element={[ <About/>]} />  */}
-                            <Route path="Portfolio"  element={[<Portfolio/>]} /> 
-                            <Route path="Resume" element={[<Resume />]} /> 
-                            <Route path="Blog" element={[<Blog/>]} /> 
-                            <Route path="Contact" element={[<Contact />]} /> 
-                        </Routes>
-                        <div className="sticky bottom-0 z-20 w-full backdrop-blur-xl md:hidden"><Navbar /></div>
+                {/* start continer */}
+                <div className='w-4/5 rounded-2xl max-xl:w-full transition  '>
+                    <div className='flex justify-center flex-col p-8 h-full  bg-component rounded-2xl border-solid  border-grey-700 relative  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]     '>                  
+                        <Navbarcopy  /> 
+                            <Routes>
+                                <Route path="/" element={[ <About/>  ]} /> 
+                                {/* <Route path="About" element={[ <About/>]} />  */}
+                                <Route path="Portfolio"  element={[<Portfolio/>]} /> 
+                                <Route path="Resume" element={[<Resume />]} /> 
+                                <Route path="Blog" element={[<Blog/>]} /> 
+                                <Route path="Contact" element={[<Contact />]} /> 
+                            </Routes>
                         </div>
+                    </div>
+                        {/* end continer */}
+                        {/* <About_asside  /> */}
+                    </div>
+                </div>
+                    <div className="fixed bottom-0 z-20 w-full backdrop-blur-xl md:hidden w-2/3"><Navbar /></div>
                </BrowserRouter>
-
-            {/* End navbar */}
-        </div>
-              {/* end continer */}
-              {/* <About_asside  /> */}
-            </div>
-          </div>
      
 
 
