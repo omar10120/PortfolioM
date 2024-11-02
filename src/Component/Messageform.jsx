@@ -97,12 +97,12 @@ function ContactForm() {
                     <div className="flex flex-wrap">
                         <div className="w-full flex justify-end">
                             <button
-                                className="appearance-none block bg-component text-white rounded-2xl border-2 border-grey-700 py-3 px-7 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 flex space-x-3 items-center justify-center hover:bg-gradient-to-r hover:from-indigo-500 shadow-[8.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+                                className="appearance-none block bg-component text-white rounded-2xl  border-grey-700 py-3 px-7 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 flex space-x-3 items-center justify-center hover:bg-gradient-to-r hover:from-indigo-500 shadow-[8.0px_8.0px_8.0px_rgba(0,0,0,0.38)] my-3"
                                 type="submit"
                                 >
                                 <img src="https://i.ibb.co/y5cSqqd/right-arrow.png" className="w-4 h-4 grayscale-[90%]" alt="" />
                                 <div className='flex justity-center items-center  space-x-3'>
-                                    <span className="text-blue-400 opacity-80">Send Message</span>
+                                    <span className="text-blue-400 opacity-80 ">Send Message</span>
                                     {isLoadedSend &&<div className="animate-spin rounded-full h-4 w-4 border-t-2 border-b-2 border-blue-500"></div> }
                                 </div>
                             </button>

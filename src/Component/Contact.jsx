@@ -44,7 +44,7 @@ function Contact() {
             {/* end loading */}
         </div>
         <div>
-             <h1 className='text-2xl font-bold pb-5'>Contact Form</h1>
+             <h1 className='text-2xl font-bold pb-5 '>Contact Form</h1>
         </div>
 
          <Messageform/>
