@@ -56,14 +56,14 @@ function ContactNav() {
     let width = window.innerWidth;    
 
     if(width <= 580){
-      document.getElementById("buttontext").innerHTML= "Contact";
+      document.getElementById("buttontext").appendChild=  '';
     }else{
       document.getElementById("buttontext").innerHTML= "Show Contact";
     }
      window.onresize = function(){
        let width = window.innerWidth;     
        if(width <= 580){
-         document.getElementById("buttontext").innerHTML= "Contact";}else
+         document.getElementById("buttontext").appendChild= ''}else
          document.getElementById("buttontext").innerHTML= "Show Contact";
       } 
       
@@ -78,7 +78,7 @@ function ContactNav() {
     
         <div className='w-3/12 max-xl:w-full   bg-component h-[775px] max-xl:h-full text-white rounded-2xl border-grey-700    transition ease-in-out duration-300  relative  shadow-custom-4  sticky top-10 '>
             <div className='absolute right-0  opacity-100  xl:opacity-0'><button className='   shadow-[8.0px_8.0px_8.0px_rgba(0,0,0,0.38)] rounded-tr-xl bg-navbar  rounded-bl-xl p-2 hover:bg-gradient-to-r hover:from-indigo-500 ' onClick={()=> toggleVisibility()} id='buttontext'>
-              <img src="/src/images/right-arrow.png" className='w-4 h-4 grayscale-[90%]'  alt="" />
+              <img src="https://img.icons8.com/color/48/sort-down.png" className='w-4 h-4 grayscale-[90%]'  alt="" />
                 </button></div>
 
           <div className='flex flex-col justify-around h-full w-full  '>

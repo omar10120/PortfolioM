@@ -99,7 +99,7 @@ function Portfolio() {
                       <a href={item.href} target='_blank'>
 
                       
-                      <div className="w-48 h-50 overflow-hidden rounded-xl  group relative flex items-center justify-center">
+                      <div className="w-48 max-md:w-96 max-sm:w-80 h-50 overflow-hidden rounded-xl  group relative flex items-center justify-center">
                         <img
 
                           src={item.src}
