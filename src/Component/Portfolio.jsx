@@ -11,6 +11,7 @@ function Portfolio() {
   ]);
 
   const cardPortfolio = [
+    { src: 'https://i.ibb.co/MVjqSLX/Screenshot-1.png', href:'https://portfolio-amr-dawoodi.vercel.app/',title: 'Portfolio', tech: 'web-design' },
     { src: 'https://i.ibb.co/6ZT4sDS/image.png', href:'https://design-web-template.vercel.app/',title: 'Bird View', tech: 'web-design' },
     { src: 'https://i.ibb.co/Lxrpmst/image.png', href:'https://mountains-view.vercel.app/', title: 'Mountains View', tech: 'webdesign' },
     { src: 'https://i.ibb.co/p36bLFg/image.png', href:'https://graphic-and-web-design.vercel.app/',title: 'Graphic Desgin Template', tech: 'WebDevelopment' },
