@@ -91,9 +91,14 @@ function ContactNav() {
             </div>
         
               <div
-        className={`${
-          isVisible  ? "opacity-100 h-3/5 max-xl:h-auto max-xl:py-12 " : "opacity-0 h-0 py-0"
-        } transition-all duration-500 ease-in-out  text-center mt-4 overflow-hidden`}>
+        // className={`${
+        //   isVisible  ? " opacity-100 h-3/5 max-xl:h-auto max-xl:py-12 " : "opacity-0  h-0 py-0 "
+        // } transition-all duration-500 ease-in-out text-center mt-4 overflow-hidden`}>
+                className={`${
+                  isVisible ? "opacity-100 max-h-custom max-xl:max-h-screen max-xl:py-12" : "opacity-0 max-h-0 py-0"
+                } transition-all duration-500 ease-in-out text-center mt-4 overflow-hidden`}
+                >
+
                         <div className='h-5 py-2 w-full flex justify-center'><div className=' w-2/3 h-[1px] bg-white opacity-20'></div></div>
                         <div className='w-full h-3/5 flex flex-col justify-evenly  px-3 max-xl:py-2  max-xl:grid max-xl:grid-cols-2 max-xl:gap-y-5  max-sm:flex   max-sm:flex-col '>
                     {navigation.map((item) => (

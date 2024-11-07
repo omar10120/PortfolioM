@@ -51,6 +51,12 @@ export default {
         'slide-in': 'slide-in 0.5s ease-in-out forwards',
       },
     },
+    maxHeight: {
+      '0': '0',
+
+      'custom': '500px',  // Adjust based on expected content height
+    },
+
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
