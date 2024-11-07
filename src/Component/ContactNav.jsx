@@ -95,7 +95,7 @@ function ContactNav() {
         //   isVisible  ? " opacity-100 h-3/5 max-xl:h-auto max-xl:py-12 " : "opacity-0  h-0 py-0 "
         // } transition-all duration-500 ease-in-out text-center mt-4 overflow-hidden`}>
                 className={`${
-                  isVisible ? "opacity-100 max-h-custom max-xl:max-h-screen max-xl:py-12" : "opacity-0 max-h-0 py-0"
+                  isVisible ? "opacity-100 max-h-custom  max-xl:max-h-screen max-xl:py-12 h-full" : "opacity-0 max-h-0 py-0"
                 } transition-all duration-500 ease-in-out text-center mt-4 overflow-hidden`}
                 >
 
