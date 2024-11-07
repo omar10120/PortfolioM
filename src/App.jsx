@@ -22,7 +22,7 @@ function App() {
         const navigate = useNavigate();
 
         const goToAbout = () => {
-            navigate('/About');
+            navigate('/');
           };
 
         function classNames(...classes) {
@@ -48,9 +48,7 @@ function App() {
                       setIsSticky(false);
                   }
               });
-              
-
-              
+                goToAbout();
           };
 
           const observer = new IntersectionObserver(handleObserver, {
@@ -72,7 +70,6 @@ function App() {
       
   return (
       <>
-        {/* <BrowserRouter> */}
         
             <div className="w-full flex justify-center items-center h-full p-16 max-sm:p-0 max-xl:py-8 max-xl:px-0 max-sm:py-8 transition-all duration-500 animate-slide-in">
                 <div className="w-9/12 h-full flex space-x-4 max-xl:space-x-0 max-xl:space-y-4 max-xl:flex-col transition-all duration-500 ease-in-out justify-center max-xl:w-10/12 max-sm:w-11/12 animate-fade-in">
@@ -84,12 +81,11 @@ function App() {
                             <Routes>
                                 <Route path="/" element={[ <About/>  ]} /> 
                                 {/* <Route path="About" element={[ <About/>]} />  */}
-                                <Route path="Portfolio"  element={[<Portfolio/>]} /> 
-                                <Route path="Resume" element={[<Resume />]} /> 
-                                <Route path="Blog" element={[<Blog/>]} /> 
-                                <Route path="Contact" element={[<Contact />]} /> 
+                                <Route path="/Portfolio"  element={[<Portfolio/>]} /> 
+                                <Route path="/Resume" element={[<Resume />]} /> 
+                                <Route path="/Blog" element={[<Blog/>]} /> 
+                                <Route path="/Contact" element={[<Contact />]} /> 
                                 <Route path="*" element={<About />} />
-
                             </Routes>
                     </div>
                     </div>
@@ -97,7 +93,6 @@ function App() {
                 </div>
             </div>
             <div className="fixed bottom-0 z-20 w-full backdrop-blur-2xl md:hidden w-2/3 backdrop-brightness-50"><Navbar /></div>
-       {/* </BrowserRouter> */}
       </>
   );
 }
