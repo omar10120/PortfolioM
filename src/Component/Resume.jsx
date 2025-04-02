@@ -2,6 +2,8 @@ import React from 'react'
 import nextjs from '../images/Next.js.png'
 import icons8Nextjs from '../images/icons8-nextjs-48.png'
 import icons8Swagger from '../images/icons8Swagger.png'
+import { RiNextjsFill } from "react-icons/ri";
+
 
 function Resume() {
   const points=[

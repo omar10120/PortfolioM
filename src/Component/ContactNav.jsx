@@ -2,6 +2,7 @@ import React, { useState, useEffect, createElement } from 'react';
 import './ContactNav.module.css'
 // import icons8download50 from '../images/arrowicon.png'
 import { RiDownloadFill } from "react-icons/ri";
+import Profile  from '../images/profile.png'
 
 const navigation = [
   {name : 'EMAIL',style:' transition transform duration-150 active:scale-90 hover:scale-105',email :  <a href='mailto:amr.dawoodi@hotmail.com' target='_blank'>amr.dawoodi@hotr...</a> , icon : '3' , src:'https://img.icons8.com/ios-filled/50/new-post.png'},
@@ -76,7 +77,7 @@ function ContactNav() {
 })
 
     function downloadCV() {
-        const cvPath = "../cv/A'mr dawoodi resume.pdf";
+        const cvPath = "../cv/C.V A'MR DAWOODI-gzl.pdf";
         const link = document.createElement("a");
         link.href = cvPath;
         link.setAttribute("download", "A'mr dawoodi resume.pdf"); // Set the download attribute
@@ -94,14 +95,14 @@ function ContactNav() {
                 </button></div>
 
           <div className='flex flex-col justify-around h-full w-full  '>
-            <div className='w-full max-xl:w-2/3 h-2/5 flex flex-col max-xl:flex-row justify-center max-xl:space-x-4 max-sm:space-x-2 max-xl:justify-start space-y-4 max-xl:space-y-0  items-center  '>  
-              <div><img src="https://i.ibb.co/w6f3rQz/IMG-20241013-184915.webp" className='rounded-3xl pointer-events-none max-xl:p-4' alt="no Image" width={150} height={250} /></div>
+            <div className='w-full max-xl:w-2/3 h-2/5 flex flex-col max-xl:flex-row justify-center max-xl:space-x-4 max-sm:space-x-2 max-xl:justify-start space-y-4 max-xl:space-y-0  items-center mt-5 '>  
+              <div><img src={Profile} className='rounded-3xl pointer-events-none max-xl:p-4' alt="no Image" width={150} height={250} /></div>
               <div className='flex flex-col space-y-4 max-sm:space-y-3 max-sm:w-full  '>
                 <div><h1 className='font-bold text-2xl max-sm:text-sm'>A'mr dawoodi</h1></div>
                 <div className='max-sm:w-2/3 '><div className='bg-[#2B2B2C] px-2 py-1 rounded-xl text-center max-sm:p-2 max-sm:w-5/5 max-sm:text-[10px]  ' >web developer</div></div>
                 <div className='max-sm:w-2/3 '><div className='bg-[#2B2B2C] px-2 py-1 rounded-xl text-center max-sm:p-2 max-sm:w-5/5 max-sm:text-[10px] ' >
                   <button  >
-                    <div onClick={downloadCV} className='flex items-center space-x-2 gap-3'>download CV <RiDownloadFill/></div>
+                    <div onClick={downloadCV} className='flex items-center space-x-2 gap-3  max-sm:text-[10px] max-sm:gap-2'>download CV <RiDownloadFill/></div>
                     {/* <img  width="18" height="18" src= {icons8download50} alt="download--v1"/> */}
                   </button></div></div>
               </div>
