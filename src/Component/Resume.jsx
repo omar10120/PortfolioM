@@ -1,7 +1,7 @@
 import React from 'react'
-import nextjs from '../../public/images/Next.js.png'
-import icons8Nextjs from '../../public/images/icons8-nextjs-48.png'
-import icons8Swagger from '../../public/images/icons8Swagger.png'
+import nextjs from '../images/Next.js.png'
+import icons8Nextjs from '../images/icons8-nextjs-48.png'
+import icons8Swagger from '../images/icons8Swagger.png'
 
 function Resume() {
   const points=[

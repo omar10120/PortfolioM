@@ -1,11 +1,11 @@
 import { Disclosure } from '@headlessui/react';
 import React, { useState, useEffect } from 'react';
-import connect4 from '../../public/images/connect4.png';
-import photography from '../../public/images/photography.png';
-import poufmaker from '../../public/images/poufmaker.png';
-import snakeGame from '../../public/images/snakeGame.png';
-import attendanceMonitoringSystem from '../../public/images/attendanceMonitoringSystem.png';
-import maxtogo from '../../public/images/MaxToGo.png';
+import connect4 from '../images/connect4.png';
+import photography from '../images/photography.png';
+import poufmaker from '../images/poufmaker.png';
+import snakeGame from '../images/snakeGame.png';
+import attendanceMonitoringSystem from '../images/attendanceMonitoringSystem.png';
+import maxtogo from '../images/MaxToGo.png';
 
 
 function Portfolio() {

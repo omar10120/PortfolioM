@@ -75,7 +75,7 @@ function ContactNav() {
 })
 
     function downloadCV() {
-        const cvPath = "../../public/cv/A'mr dawoodi resume.pdf";
+        const cvPath = "../cv/A'mr dawoodi resume.pdf";
         const link = document.createElement("a");
         link.href = cvPath;
         link.setAttribute("download", "A'mr dawoodi resume.pdf"); // Set the download attribute
