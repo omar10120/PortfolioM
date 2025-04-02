@@ -22,7 +22,7 @@ function About() {
         <div className='flex flex-col   space-y-6 '>
             <h1 className='text-3xl font-bold '>About Me  </h1>
             <div className='w-full'><div className='h-[5px] rounded  w-10 bg-gradient-to-r from-[#474bff] to-[#bc48ff] '></div></div>
-          <p className='opacity-70'>I am a full-stack developer (React.js & PHP & ASP.Net & C#) with a focus on creating (and sometimes designing) exceptional digital experiences that are fast, accessible, visually engaging, and responsive. I have been building web and desktop applications for over 4 years, and I am always on the cutting edge.</p>
+          <p className='opacity-70'>I am a full-stack developer (React.js & PHP & Nextjs & ASP.Net & C#) with a focus on creating (and sometimes designing) exceptional digital experiences that are fast, accessible, visually engaging, and responsive. I have been building web and desktop applications for over 4 years, and I am always on the cutting edge.</p>
         </div>
         <div className=' flex flex-col  h-full  '>
           
@@ -30,7 +30,7 @@ function About() {
             <div className='w-full grid grid-cols-2 max-md2:grid-cols-1  gap-6   p-3  '>
               {card.map((item)=>(
                 //start card what am doing
-                <div className='   border-grey-700 drop-shadow-2xl rounded-2xl p-3 flex justify-center max-sm:items-center max-sm:flex-col max-sm:text-center py-5   shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] '>
+                <div key= {item.title} className='   border-grey-700 drop-shadow-2xl rounded-2xl p-3 flex justify-center max-sm:items-center max-sm:flex-col max-sm:text-center py-5   shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] '>
                   
                   <div className=' w-1/5 max-md2:w-3/12 p-2   max-md2:flex max-md2:justify-center '><img src={item.src} className='h-10 w-10' alt="" /></div>
                   <div className=' w-2/3 max-md2:w-full flex flex-col space-y-3 '>
@@ -61,7 +61,7 @@ function About() {
               {cardBottom.map((item)=>(
                 //start card what am doing
                 // <div className='   border-grey-700  rounded-2xl p-3 flex justify-center max-sm:items-center max-sm:flex-col max-sm:text-center  shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]  '>
-                <div className='   border-grey-700  rounded-2xl p-3 flex justify-center max-sm:items-center max-sm:flex-col max-sm:text-center  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  '>
+                <div key={item.title} className='   border-grey-700  rounded-2xl p-3 flex justify-center max-sm:items-center max-sm:flex-col max-sm:text-center  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  '>
                 <div className=' w-1/5 p-2 '><img src={item.src} className='h-10 w-10' alt="" /></div>
                 <div className=' w-2/3 max-sm:w-full flex flex-col space-y-3'>
                   <div className='text-xl'>{item.title}</div>

@@ -5,6 +5,7 @@ const navigation = [
   { name: 'All', href: '#all', current: true },
   { name: 'Webdesign', href: '#webdesign', current: false },
   { name: 'Web Development', href: '#', current: false },
+  { name: 'Games', href: '#games', current: false },
 
 ]
 

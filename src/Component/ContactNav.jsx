@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createElement } from 'react';
 import './ContactNav.module.css'
-
+// import icons8download50 from '../images/arrowicon.png'
 
 const navigation = [
   {name : 'EMAIL',style:' transition transform duration-150 active:scale-90 hover:scale-105',email :  <a href='mailto:amr.dawoodi@hotmail.com' target='_blank'>amr.dawoodi@hotr...</a> , icon : '3' , src:'https://img.icons8.com/ios-filled/50/new-post.png'},
@@ -60,6 +60,7 @@ function ContactNav() {
     }else{
       document.getElementById("buttontext").innerHTML= "Show Contact";
     }
+
      window.onresize = function(){
        let width = window.innerWidth;     
        if(width <= 580){
@@ -67,11 +68,21 @@ function ContactNav() {
          document.getElementById("buttontext").innerHTML= "Show Contact";
       } 
       
+    
+  
       
       
 })
 
-
+    function downloadCV() {
+        const cvPath = "../../public/cv/A'mr dawoodi resume.pdf";
+        const link = document.createElement("a");
+        link.href = cvPath;
+        link.setAttribute("download", "A'mr dawoodi resume.pdf"); // Set the download attribute
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
   
   return (
     <>
@@ -87,6 +98,11 @@ function ContactNav() {
               <div className='flex flex-col space-y-4 max-sm:space-y-3 max-sm:w-full  '>
                 <div><h1 className='font-bold text-2xl max-sm:text-sm'>A'mr dawoodi</h1></div>
                 <div className='max-sm:w-2/3 '><div className='bg-[#2B2B2C] px-2 py-1 rounded-xl text-center max-sm:p-2 max-sm:w-5/5 max-sm:text-[10px]  ' >web developer</div></div>
+                <div className='max-sm:w-2/3 '><div className='bg-[#2B2B2C] px-2 py-1 rounded-xl text-center max-sm:p-2 max-sm:w-5/5 max-sm:text-[10px] ' >
+                  <button  >
+                    <div onClick={downloadCV}>download CV </div>
+                    {/* <img  width="18" height="18" src= {icons8download50} alt="download--v1"/> */}
+                  </button></div></div>
               </div>
             </div>
         
@@ -101,8 +117,8 @@ function ContactNav() {
 
                         <div className='h-5 py-2 w-full flex justify-center'><div className=' w-2/3 h-[1px] bg-white opacity-20'></div></div>
                         <div className='w-full h-3/5 flex flex-col justify-evenly  px-3 max-xl:py-2  max-xl:grid max-xl:grid-cols-2 max-xl:gap-y-5  max-sm:flex   max-sm:flex-col '>
-                    {navigation.map((item) => (
-                      <div className='w-full  flex  space-x-3 items-center flex justify-center max-sm:justify-start  '>
+                    {navigation.map((item ) => (
+                      <div key={item.title} className='w-full  flex  space-x-3 items-center flex justify-center max-sm:justify-start  '>
                             <div className=' min-xl:w-1/4  flex justify-center items-center '>
                               <img src={item.src} className='w-8 h-8 rounded p-1 shadow-inner  border-b-2 border-l-2 bg-white' />
                             </div>              

@@ -1,20 +1,34 @@
 import { Disclosure } from '@headlessui/react';
 import React, { useState, useEffect } from 'react';
+import connect4 from '../../public/images/connect4.png';
+import photography from '../../public/images/photography.png';
+import poufmaker from '../../public/images/poufmaker.png';
+import snakeGame from '../../public/images/snakeGame.png';
+import attendanceMonitoringSystem from '../../public/images/attendanceMonitoringSystem.png';
+import maxtogo from '../../public/images/MaxToGo.png';
+
 
 function Portfolio() {
   const [navname, setNavname] = useState('');
   const [loading, setLoading] = useState(true);
   const [navigation, setNavigation] = useState([
     { name: 'All', href: '#', current: true },
-    { name: 'Webdesign', href: '#', current: false },
-    { name: 'WebDevelopment', href: '#', current: false },
+    { name: 'Web-design', href: '#', current: false },
+    { name: 'Web Application', href: '#', current: false },
+    { name: 'Games', href: '#', current: false },
   ]);
 
   const cardPortfolio = [
     { src: 'https://i.ibb.co/MVjqSLX/Screenshot-1.png', href:'https://portfolio-amr-dawoodi.vercel.app/',title: 'Portfolio', tech: 'web-design' },
     { src: 'https://i.ibb.co/6ZT4sDS/image.png', href:'https://design-web-template.vercel.app/',title: 'Bird View', tech: 'web-design' },
-    { src: 'https://i.ibb.co/Lxrpmst/image.png', href:'https://mountains-view.vercel.app/', title: 'Mountains View', tech: 'webdesign' },
-    { src: 'https://i.ibb.co/p36bLFg/image.png', href:'https://graphic-and-web-design.vercel.app/',title: 'Graphic Desgin Template', tech: 'WebDevelopment' },
+    { src: 'https://i.ibb.co/Lxrpmst/image.png', href:'https://mountains-view.vercel.app/', title: 'Mountains View', tech: 'Web-design' },
+    { src: 'https://i.ibb.co/p36bLFg/image.png', href:'https://graphic-and-web-design.vercel.app/',title: 'Graphic Desgin Template', tech: 'web-design' },
+    { src: photography, href:'https://photography-portfolio-theta-two.vercel.app/',title: 'Photography portfolio', tech: 'Web-design' },
+    { src: poufmaker, href:'https://poufmaker-frontend-86qk.vercel.app/',title: 'Poufmaker with ai (beta)', tech: 'Web Application' },
+    { src: attendanceMonitoringSystem, href:'https://attendance-monitoring-system-blush.vercel.app/login',title: 'Attendance Monitoring System (beta)', tech: 'Web Application' }, 
+    { src: maxtogo, href:'https://max-togo.com/en',title: 'MaxToGo System', tech: 'Web Application' }, 
+    { src: connect4, href:'https://connect4.site/',title: 'Connect 4 with ai', tech: 'Games' },
+    { src: snakeGame, href:'https://snake-game-time.vercel.app/',title: 'Snake game', tech: 'Games' },
   ];
 
   // Set default navigation name if empty

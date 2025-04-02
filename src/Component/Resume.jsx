@@ -1,4 +1,7 @@
 import React from 'react'
+import nextjs from '../../public/images/Next.js.png'
+import icons8Nextjs from '../../public/images/icons8-nextjs-48.png'
+import icons8Swagger from '../../public/images/icons8Swagger.png'
 
 function Resume() {
   const points=[
@@ -21,6 +24,7 @@ function Resume() {
     {title:'Frontend',style:'mx-5', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg' , tech:'Bootstrap  '},
     {title:'Frontend',style:'mx-5', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' , tech:'Tawilwind'},
     {title:'Frontend',style:'mx-5', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg' , tech:'SASS'},
+    {title:'Frontend',style:'mx-5', src: icons8Nextjs, tech:'Nextjs'},
 
   ]
 
@@ -29,6 +33,7 @@ function Resume() {
     {title:'Backend', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg' , tech:'PHP'},
     {title:'Backend', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg' , tech:'Node.js'},
     {title:'Backend', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg' , tech:'ASP.Net'},
+    {title:'Backend', src:icons8Nextjs , tech:'Nextjs'},
     
   ]
 
@@ -43,6 +48,7 @@ function Resume() {
     {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg' , tech:'V Studio'},
     {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' ,style:'bg-white rounded-2xl', tech:'GitHub'},
     {title:'ools & Version Control', src:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg' , tech:'POSTMAN', },
+    {title:'ools & Version Control', src:icons8Swagger , tech:'Swagger', },
   ]
 
   /*end tech*/  
@@ -68,7 +74,7 @@ function Resume() {
                   
                       {points.map((item)=>(
                           // <div className='flex space-x-8 bg-red-900 w-2/3 '>
-                          <div className='flex space-x-8   '>
+                          <div  key={item.title} className='flex space-x-8   '>
                             <div className={`flex flex-col items-center justify-start  w-[1px] bg-line  ${item.style1}  `}>
                             <div className={`flex justify-center items-center my-3 `}>
                               <div className='absolute flex justify-center items-center  '>
@@ -104,7 +110,8 @@ function Resume() {
                     </div>  
                   </div>
                   {Experience.map((item)=>(
-                    <div className='flex space-x-8   '>
+                     
+                    <div  key={item.title} className='flex space-x-8   '>
                       <div className={`flex flex-col items-center justify-start   w-[1px] bg-line  ${item.style}`}>
                       <div className={`flex justify-center items-center my-3 `}>
                           <div className='absolute flex justify-center items-center'>
@@ -150,13 +157,13 @@ function Resume() {
                       </div>                    
                       <div className='flex flex-col space-y-2   max-md:w-full  ' >
                             <h3>Frontend</h3>
-                            <h2 className='text-[#8D9BCF]'>2029 - 2020</h2>
+                            <h2 className='text-[#8D9BCF]'>2025 - 2020</h2>
                        
 
                                         {/* start tech */}
                                         <div className={`grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2 max-sm:w-4/5    `}> 
                                             {Frontend.map((item)=>(
-                                                    <div className=' flex py-1 px-1  space-x-2 flex justify-center items-center  rounded-2xl  border-grey-700  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]   '>
+                                                    <div   key={item.title} className=' flex py-1 px-1  space-x-2 flex justify-center items-center  rounded-2xl  border-grey-700  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]   '>
                                                         <div className=' w-5 rounded '><img src={item.src}  className='h-6 w-6  rounded-2xl' /></div>
                                                         <div className='text-xs '>{item.tech}</div>
                                                         
@@ -181,12 +188,12 @@ function Resume() {
                       </div>                    
                       <div className='flex flex-col space-y-2   max-md:w-full  ' >
                             <h3>Backend</h3>
-                            <h2 className='text-[#8D9BCF]'>2029 - 2020</h2>
+                            <h2 className='text-[#8D9BCF]'>2025 - 2020</h2>
                                   
                                         {/* start tech */}
                                         <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2  max-sm:w-4/5'> 
                                             {Backend.map((item)=>(
-                                                    <div className=' flex py-2 px-1 space-x-2 flex justify-center items-center  rounded-2xl  border-grey-700 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] '>                                                    
+                                                    <div  key={item.title} className=' flex py-2 px-1 space-x-2 flex justify-center items-center  rounded-2xl  border-grey-700 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] '>                                                    
                                                         <div className=' w-5 rounded '><img src={item.src} className='h-6 w-6' /></div>
                                                         <div className='text-xs'>{item.tech}</div>
                                                     </div> 
@@ -209,12 +216,12 @@ function Resume() {
                       </div>                    
                       <div className='flex flex-col space-y-2   max-md:w-full  ' >
                             <h3>Database</h3>
-                            <h2 className='text-[#8D9BCF]'>2029 - 2020</h2>
+                            <h2 className='text-[#8D9BCF]'>2025 - 2020</h2>
                                   
                                         {/* start tech */}
                                         <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2 py-2  max-sm:w-4/5'> 
                                             {Database.map((item)=>(
-                                                    <div className=' flex py-2  px-1 space-x-2 flex justify-center items-center  rounded-2xl order-grey-700  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  '>
+                                                    <div  key={item.title} className=' flex py-2  px-1 space-x-2 flex justify-center items-center  rounded-2xl order-grey-700  shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  '>
                                                         <div className=' w-5 rounded '><img src={item.src} className='h-6 w-6' /></div>
                                                         <div className='text-xs '>{item.tech}</div>
                                                     </div> 
@@ -237,12 +244,12 @@ function Resume() {
                       </div>                    
                       <div className='flex flex-col space-y-2   max-md:w-full   ' >
                             <h3>Tools & Version Control</h3>
-                            <h2 className='text-[#8D9BCF]'>2029 - 2020</h2>
+                            <h2 className='text-[#8D9BCF]'>2025 - 2020</h2>
                                   
                                         {/* start tech */}
                                         <div className='grid  gap-3 grid-cols-4  max-md:grid-cols-3 max-sm:grid-cols-2  py-2  max-sm:w-4/5   '> 
                                             {Tools.map((item)=>(
-                                                    <div className=' flex py-2  px-2  space-x-2 flex justify-center items-center  rounded-2xl border-grey-700   shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]   '>
+                                                    <div  key={item.title} className=' flex py-2  px-2  space-x-2 flex justify-center items-center  rounded-2xl border-grey-700   shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]   '>
                                                                 <div className=' w-5 rounded '><img src={item.src} className={`h-6 w-6 ${item.style}`} /></div>
                                                                 <div className='text-xs '>{item.tech}</div>
                                                         
