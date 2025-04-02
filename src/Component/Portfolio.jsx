@@ -5,7 +5,7 @@ import photography from '../images/photography.png';
 import poufmaker from '../images/poufmaker.png';
 import snakeGame from '../images/snakeGame.png';
 import attendanceMonitoringSystem from '../images/attendanceMonitoringSystem.png';
-import maxtogo from '../images/MaxToGo.png';
+import maxtogo from '../images/maxtogo.png';
 
 
 function Portfolio() {
