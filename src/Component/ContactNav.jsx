@@ -1,6 +1,7 @@
 import React, { useState, useEffect, createElement } from 'react';
 import './ContactNav.module.css'
 // import icons8download50 from '../images/arrowicon.png'
+import { RiDownloadFill } from "react-icons/ri";
 
 const navigation = [
   {name : 'EMAIL',style:' transition transform duration-150 active:scale-90 hover:scale-105',email :  <a href='mailto:amr.dawoodi@hotmail.com' target='_blank'>amr.dawoodi@hotr...</a> , icon : '3' , src:'https://img.icons8.com/ios-filled/50/new-post.png'},
@@ -100,7 +101,7 @@ function ContactNav() {
                 <div className='max-sm:w-2/3 '><div className='bg-[#2B2B2C] px-2 py-1 rounded-xl text-center max-sm:p-2 max-sm:w-5/5 max-sm:text-[10px]  ' >web developer</div></div>
                 <div className='max-sm:w-2/3 '><div className='bg-[#2B2B2C] px-2 py-1 rounded-xl text-center max-sm:p-2 max-sm:w-5/5 max-sm:text-[10px] ' >
                   <button  >
-                    <div onClick={downloadCV}>download CV </div>
+                    <div onClick={downloadCV} className='flex items-center space-x-2 gap-3'>download CV <RiDownloadFill/></div>
                     {/* <img  width="18" height="18" src= {icons8download50} alt="download--v1"/> */}
                   </button></div></div>
               </div>

@@ -10,6 +10,7 @@ import portfolioOld from '../images/portfolioOld.png';
 import BirdView from '../images/BirdView.png';
 import MountainsView from '../images/MountainsView.png';
 import GraphicDesign from '../images/GraphicDesign.png';
+import { RiDownloadFill } from "react-icons/ri";
 
 
 function Portfolio() {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button } from "flowbite-react";
 import './About.module.css'
-
 // import Dcomp from './Dcomp'
 
 
