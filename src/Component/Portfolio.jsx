@@ -6,6 +6,10 @@ import poufmaker from '../images/poufmaker.png';
 import snakeGame from '../images/snakeGame.png';
 import attendanceMonitoringSystem from '../images/attendanceMonitoringSystem.png';
 import maxtogo from '../images/maxtogo.png';
+import portfolioOld from '../images/portfolioOld.png';
+import BirdView from '../images/BirdView.png';
+import MountainsView from '../images/MountainsView.png';
+import GraphicDesign from '../images/GraphicDesign.png';
 
 
 function Portfolio() {
@@ -19,10 +23,10 @@ function Portfolio() {
   ]);
 
   const cardPortfolio = [
-    { src: 'https://i.ibb.co/MVjqSLX/Screenshot-1.png', href:'https://portfolio-amr-dawoodi.vercel.app/',title: 'Portfolio', tech: 'web-design' },
-    { src: 'https://i.ibb.co/6ZT4sDS/image.png', href:'https://design-web-template.vercel.app/',title: 'Bird View', tech: 'web-design' },
-    { src: 'https://i.ibb.co/Lxrpmst/image.png', href:'https://mountains-view.vercel.app/', title: 'Mountains View', tech: 'Web-design' },
-    { src: 'https://i.ibb.co/p36bLFg/image.png', href:'https://graphic-and-web-design.vercel.app/',title: 'Graphic Desgin Template', tech: 'web-design' },
+    { src: portfolioOld, href:'https://portfolio-amr-dawoodi.vercel.app/',title: 'Portfolio', tech: 'web-design' },
+    { src: BirdView, href:'https://design-web-template.vercel.app/',title: 'Bird View', tech: 'web-design' },
+    { src: MountainsView, href:'https://mountains-view.vercel.app/', title: 'Mountains View', tech: 'Web-design' },
+    { src: GraphicDesign, href:'https://graphic-and-web-design.vercel.app/',title: 'Graphic Desgin Template', tech: 'web-design' },
     { src: photography, href:'https://photography-portfolio-theta-two.vercel.app/',title: 'Photography portfolio', tech: 'Web-design' },
     { src: poufmaker, href:'https://poufmaker-frontend-86qk.vercel.app/',title: 'Poufmaker with ai (beta)', tech: 'Web Application' },
     { src: attendanceMonitoringSystem, href:'https://attendance-monitoring-system-blush.vercel.app/login',title: 'Attendance Monitoring System (beta)', tech: 'Web Application' }, 
