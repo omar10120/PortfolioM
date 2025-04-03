@@ -37,7 +37,7 @@ function Portfolio() {
     { src: connect4, href:'https://connect4.site/',title: 'Connect 4 with ai', tech: 'Games' },
     { src: snakeGame, href:'https://snake-game-time.vercel.app/',title: 'Snake game', tech: 'Games' },
     { src: TypeMaster, href:'https://typing-speed-test-eta-five.vercel.app/',title: 'Type challange', tech: 'Games' },
-    { src: Chesses, href:'https://chess-time.vercel.app/',title: 'Cheese Time ', tech: 'Games' },
+    { src: Chesses, href:'https://chess-time.vercel.app/',title: 'Cheese Time with ai(beta) ', tech: 'Games' },
   ];
 
   // Set default navigation name if empty
