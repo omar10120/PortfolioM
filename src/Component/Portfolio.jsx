@@ -10,7 +10,8 @@ import portfolioOld from '../images/portfolioOld.png';
 import BirdView from '../images/BirdView.png';
 import MountainsView from '../images/MountainsView.png';
 import GraphicDesign from '../images/GraphicDesign.png';
-import { RiDownloadFill } from "react-icons/ri";
+import TypeMaster from '../images/TypeMaster.png';
+
 
 
 function Portfolio() {
@@ -34,6 +35,7 @@ function Portfolio() {
     { src: maxtogo, href:'https://max-togo.com/en',title: 'MaxToGo System', tech: 'Web Application' }, 
     { src: connect4, href:'https://connect4.site/',title: 'Connect 4 with ai', tech: 'Games' },
     { src: snakeGame, href:'https://snake-game-time.vercel.app/',title: 'Snake game', tech: 'Games' },
+    { src: TypeMaster, href:'https://typing-speed-test-eta-five.vercel.app/',title: 'Type challange', tech: 'Games' },
   ];
 
   // Set default navigation name if empty
