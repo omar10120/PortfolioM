@@ -12,6 +12,7 @@ import MountainsView from '../images/MountainsView.png';
 import GraphicDesign from '../images/GraphicDesign.png';
 import TypeMaster from '../images/TypeMaster.png';
 import Chesses from '../images/chesse.png';
+import chatbot from '../images/chatbot.png';
 
 
 
@@ -38,6 +39,7 @@ function Portfolio() {
     { src: snakeGame, href:'https://snake-game-time.vercel.app/',title: 'Snake game', tech: 'Games' },
     { src: TypeMaster, href:'https://typing-speed-test-eta-five.vercel.app/',title: 'Type challange', tech: 'Games' },
     { src: Chesses, href:'https://chess-time.vercel.app/',title: 'Cheese Time with ai(beta) ', tech: 'Games' },
+    { src: chatbot, href:'https://amr-ai.vercel.app/',title: 'amr-ai ', tech: 'Web Application' },
   ];
 
   // Set default navigation name if empty
