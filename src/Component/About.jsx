@@ -21,7 +21,7 @@ function About() {
         <div className='flex flex-col   space-y-6 '>
             <h1 className='text-3xl font-bold '>About Me  </h1>
             <div className='w-full'><div className='h-[5px] rounded  w-10 bg-gradient-to-r from-[#474bff] to-[#bc48ff] '></div></div>
-          <p className='opacity-70'>I am a full-stack developer (React.js & PHP & Nextjs & ASP.Net & C#) with a focus on creating (and sometimes designing) exceptional digital experiences that are fast, accessible, visually engaging, and responsive. I have been building web and desktop applications for over 4 years, and I am always on the cutting edge.</p>
+          <p className='opacity-70'>I am a full-stack developer (RResults-driven Full-Stack Developer with over 4 years of experience delivering high-impact web and desktop applications using Next.js, ASP.NET Core, and Blazor. Proven ability to lead teams and manage complex projects from concept to deployment. Developed and maintained systems for healthcare, gas station automation, and pharmacy management, achieving performance improvements of up to 30%. Skilled in database optimization, secure API development, and real-time data integration with hardware devices.eact.js & PHP & Nextjs & ASP.Net & C#) with a focus on creating (and sometimes designing) exceptional digital experiences that are fast, accessible, visually engaging, and responsive. I have been building web and desktop applications for over 4 years, and I am always on the cutting edge.</p>
         </div>
         <div className=' flex flex-col  h-full  '>
           

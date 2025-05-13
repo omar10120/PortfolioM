@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createElement } from 'react';
+import { useState, useEffect } from 'react';
 import './ContactNav.module.css'
 // import icons8download50 from '../images/arrowicon.png'
 import { RiDownloadFill } from "react-icons/ri";
@@ -7,7 +7,7 @@ import Profile  from '../images/profile.png'
 const navigation = [
   {name : 'EMAIL',style:' transition transform duration-150 active:scale-90 hover:scale-105',email :  <a href='mailto:amr.dawoodi@hotmail.com' target='_blank'>amr.dawoodi@hotr...</a> , icon : '3' , src:'https://img.icons8.com/ios-filled/50/new-post.png'},
   {name : 'PHONE',style:' transition transform duration-150 active:scale-90 hover:scale-105',email : <a href='https://wa.me/+963999596071' target='_blank'>+96399596071</a>  , icon : '3',src:'https://img.icons8.com/ios-glyphs/30/phone--v1.png' },
-  {name : 'Birthday', email : 'August 8, 1999' , icon : '3' ,src:'https://img.icons8.com/ios-filled/50/birth-date.png'},
+  {name : 'Birthday', email : 'August 12, 1999' , icon : '3' ,src:'https://img.icons8.com/ios-filled/50/birth-date.png'},
   {name : 'Location',email : 'Syria , Damascus ' , icon : '3' ,src:'https://img.icons8.com/ios-filled/50/marker.png'},
 ]
 const social = [
@@ -52,7 +52,7 @@ function ContactNav() {
     }, [isVisible]);
 
   // end animation
-  const[ Showcontact , setcontanct ]= useState(true);
+  // const[ Showcontact , setcontanct ]= useState(true);
   useEffect(() => {
     // setIsVisible(false)
     let width = window.innerWidth;    
@@ -77,7 +77,7 @@ function ContactNav() {
 })
 
     function downloadCV() {
-        const cvPath = "../cv/A'mr dawoodi resume.pdf";
+        const cvPath = "../../public/A'mr dawoodi resume.pdf";
         const link = document.createElement("a");
         link.href = cvPath;
         link.setAttribute("download", "A'mr dawoodi resume.pdf"); // Set the download attribute
@@ -98,7 +98,7 @@ function ContactNav() {
             <div className='w-full max-xl:w-2/3 h-2/5 flex flex-col max-xl:flex-row justify-center max-xl:space-x-4 max-sm:space-x-2 max-xl:justify-start space-y-4 max-xl:space-y-0  items-center mt-5 '>  
               <div><img src={Profile} className='rounded-3xl pointer-events-none max-xl:p-4' alt="no Image" width={150} height={250} /></div>
               <div className='flex flex-col space-y-4 max-sm:space-y-3 max-sm:w-full  '>
-                <div><h1 className='font-bold text-2xl max-sm:text-sm'>A'mr dawoodi</h1></div>
+                <div><h1 className='font-bold text-2xl max-sm:text-sm'>A`mr dawoodi</h1></div>
                 <div className='max-sm:w-2/3 '><div className='bg-[#2B2B2C] px-2 py-1 rounded-xl text-center max-sm:p-2 max-sm:w-5/5 max-sm:text-[10px]  ' >web developer</div></div>
                 <div className='max-sm:w-2/3 '><div className='bg-[#2B2B2C] px-2 py-1 rounded-xl text-center max-sm:p-2 max-sm:w-5/5 max-sm:text-[10px] ' >
                   <button  >
