@@ -13,6 +13,11 @@ import GraphicDesign from '../images/GraphicDesign.png';
 import TypeMaster from '../images/TypeMaster.png';
 import Chesses from '../images/chesse.png';
 import chatbot from '../images/chatbot.png';
+import luzori from '../images/luzori.jpg';
+import dashboard_luzori from '../images/dashboard-luzori.jpg';
+import Lbeena from '../images/lbeena.png';
+import Mm8market from '../images/mm8market.png';
+import train7  from '../images/train7.png';
 
 
 
@@ -27,19 +32,22 @@ function Portfolio() {
   ]);
 
   const cardPortfolio = [
-    { src: portfolioOld, href:'https://portfolio-amr-dawoodi.vercel.app/',title: 'Portfolio', tech: 'web-design' },
-    { src: BirdView, href:'https://design-web-template.vercel.app/',title: 'Bird View', tech: 'web-design' },
-    { src: MountainsView, href:'https://mountains-view.vercel.app/', title: 'Mountains View', tech: 'Web-design' },
-    { src: GraphicDesign, href:'https://graphic-and-web-design.vercel.app/',title: 'Graphic Desgin Template', tech: 'web-design' },
+    // { src: portfolioOld, href:'https://portfolio-amr-dawoodi.vercel.app/',title: 'Portfolio', tech: 'web-design' },
+    // { src: BirdView, href:'https://design-web-template.vercel.app/',title: 'Bird View', tech: 'web-design' },
+    // { src: MountainsView, href:'https://mountains-view.vercel.app/', title: 'Mountains View', tech: 'Web-design' },
+    // { src: GraphicDesign, href:'https://graphic-and-web-design.vercel.app/',title: 'Graphic Desgin Template', tech: 'web-design' },
     { src: photography, href:'https://photography-portfolio-theta-two.vercel.app/',title: 'Photography portfolio', tech: 'Web-design' },
     { src: poufmaker, href:'https://poufmaker-frontend-86qk.vercel.app/',title: 'Poufmaker with ai (beta)', tech: 'Web Application' },
     { src: attendanceMonitoringSystem, href:'https://attendance-monitoring-system-blush.vercel.app/login',title: 'Attendance Monitoring System (beta)', tech: 'Web Application' }, 
     { src: maxtogo, href:'https://max-togo.com/en',title: 'MaxToGo System', tech: 'Web Application' }, 
     { src: connect4, href:'https://connect4.site/',title: 'Connect 4 with ai', tech: 'Games' },
-    { src: snakeGame, href:'https://snake-game-time.vercel.app/',title: 'Snake game', tech: 'Games' },
     { src: TypeMaster, href:'https://typing-speed-test-eta-five.vercel.app/',title: 'Type challange', tech: 'Games' },
-    { src: Chesses, href:'https://chess-time.vercel.app/',title: 'Cheese Time with ai(beta) ', tech: 'Games' },
-    { src: chatbot, href:'https://amr-ai.vercel.app/',title: 'amr-ai ', tech: 'Web Application' },
+    // { src: Chesses, href:'https://chess-time.vercel.app/',title: 'Cheese Time with ai(beta) ', tech: 'Games' },
+    { src: dashboard_luzori, href:'https://www.dashboard.luzori.com',title: 'Dashbaord Luzori', tech: 'Web Application' },
+    { src: luzori, href:'https://dashboard.luzori.com/',title: 'Luzori ', tech: 'Web Application' },
+    { src: Lbeena, href:'https://www.dashboard.lbeena.com',title: 'Lbeena', tech: 'Web Application' },
+    { src: Mm8market, href:'https://www.mm8market.com/',title: 'Mm8market', tech: 'Web Application' },
+    { src: train7, href:'https://dashboard.train7.com',title: 'train7', tech: 'Web Application' },
   ];
 
   // Set default navigation name if empty
