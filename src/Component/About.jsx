@@ -12,7 +12,7 @@ function About() {
     {title : 'Backend', text : 'Building robust and scalable server-side solutions, ensuring secure, fast, and efficient functionality for your web applications.', src:'https://img.icons8.com/color/48/programming--v1.png'},    
   ]
   const cardBottom = [
-    {title : 'Fiverr',a:'', text : 'Coming Soon... ', src:'https://img.icons8.com/color/48/fiverr.png'},
+    // {title : 'Fiverr',a:'', text : 'Coming Soon... ', src:'https://img.icons8.com/color/48/fiverr.png'},
     {title : 'LinkedIn',a:'', text : 'Connect with me on LinkedIn to view my professional journey, network, and explore opportunities for collaboration. ', src:'https://img.icons8.com/3d-fluency/94/linkedin.png'},
   ]
   return (
