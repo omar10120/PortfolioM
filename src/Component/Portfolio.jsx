@@ -43,7 +43,7 @@ function Portfolio() {
     { src: connect4, href:'https://connect4.site/',title: 'Connect 4 with ai', tech: 'Games' },
     { src: TypeMaster, href:'https://typing-speed-test-eta-five.vercel.app/',title: 'Type challange', tech: 'Games' },
     // { src: Chesses, href:'https://chess-time.vercel.app/',title: 'Cheese Time with ai(beta) ', tech: 'Games' },
-    { src: dashboard_luzori, href:'https://www.dashboard.luzori.com',title: 'Dashbaord Luzori', tech: 'Web Application' },
+    { src: dashboard_luzori, href:'https://www.dashboard.luzori.com',title: 'Dashbaord Luzori (SAAS)', tech: 'Web Application' },
     { src: luzori, href:'https://dashboard.luzori.com/',title: 'Luzori ', tech: 'Web Application' },
     { src: Lbeena, href:'https://www.dashboard.lbeena.com',title: 'Lbeena', tech: 'Web Application' },
     { src: Mm8market, href:'https://www.mm8market.com/',title: 'Mm8market', tech: 'Web Application' },
