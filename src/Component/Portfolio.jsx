@@ -135,7 +135,7 @@ function Portfolio() {
                       
                       <div className="w-48 max-md:w-96 max-sm:w-80 h-50 overflow-hidden rounded-xl  group relative flex items-center justify-center">
                         <img
-
+                          loading='lazy'
                           src={item.src}
                           className="w-full h-full  object-cover rounded-xl transition-transform duration-300 ease-in-out W-full  group-hover:scale-110"
                           alt={item.title}
