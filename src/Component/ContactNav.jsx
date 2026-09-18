@@ -3,7 +3,7 @@ import './ContactNav.module.css'
 // import icons8download50 from '../images/arrowicon.png'
 import { RiDownloadFill } from "react-icons/ri";
 import Profile  from '../images/profile.png'
-import cv from '../../public/amrcv.pdf'
+import cv from '../../src/assets/amrcv.pdf'
 const navigation = [
   {name : 'EMAIL',style:' transition transform duration-150 active:scale-90 hover:scale-105',email :  <a href='mailto:amr.dawoodi@hotmail.com' target='_blank'>amr.dawoodi@hotr...</a> , icon : '3' , src:'https://img.icons8.com/ios-filled/50/new-post.png'},
   {name : 'PHONE',style:' transition transform duration-150 active:scale-90 hover:scale-105',email : <a href='https://wa.me/+963999596071' target='_blank'>+96399596071</a>  , icon : '3',src:'https://img.icons8.com/ios-glyphs/30/phone--v1.png' },
